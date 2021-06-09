@@ -11,7 +11,7 @@ class Airline < ApplicationRecord
 
   # method to caputre avg score
   def avg_score
-    reviews.averae(:score).round(2).to_f
+    reviews.average(:score).round(2).to_f
   end
 
 end
