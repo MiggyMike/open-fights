@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   ## set Route Path
   root 'pages#index'
-  #namespace API
+
+  # namespace API
   namespace :api do
     namespace :v1 do
       resources :airlines, param: :slug
