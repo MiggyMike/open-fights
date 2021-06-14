@@ -11,6 +11,8 @@ class Airline < ApplicationRecord
 
   # method to caputre avg score
   def avg_score
+    # added this guard for airlines without reveiws
+    return 0 unless reviews.count.positive?
     reviews.average(:score).round(2).to_f
   end
 
