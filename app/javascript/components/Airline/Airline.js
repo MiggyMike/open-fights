@@ -68,7 +68,7 @@ const Airline = (props) => {
 
     // grab airline id from  airline object
     const airline_id = airline.data.id;
-    //  combine  review with the airline id
+    // combine  review with the airline id
     // making post request to api
     axios
       .post('/api/v1/reviews', { review, airline_id }) // payload submitted
