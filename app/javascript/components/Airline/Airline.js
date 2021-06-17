@@ -47,6 +47,40 @@ const Airline = (props) => {
       })
       .catch((resp) => console.log(resp));
   }, []);
+
+  // handles changes in input fields
+  const handleChange = (e) => {
+    e.preventDefault();
+    // console.log('name:', e.target.name, 'value:', e.target.value);
+    setReview(Object.assign({}, review, { [e.target.name]: e.target.value }));
+    console.log('review:', review);
+  };
+
+  // handles changes in what we do when form is submited fields
+  // sumbit review to api to create new recview in database
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // update default headers to pull in csrfTokens
+    const csrfToken = document.querySelector('[name =csrf-token]').content;
+    axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken;
+    console.log('csrf:', csrfToken);
+
+    // grab airline id from  airline object
+    const airline_id = airline.data.id;
+    //  combine  review with the airline id
+    // making post request to api
+    axios
+      .post('/api/v1/reviews', { review, airline_id }) // payload submitted
+      .then((resp) => {
+        // debugger;
+        const included = [...airline.included, resp.data];
+        setAirline({ ...airline, included });
+        setReview({ title: '', description: '', score: 0 });
+      })
+      .catch((resp) => {});
+  };
+
   return (
     <Wrapper>
       {/* added the loaded wrapper to header */}
@@ -62,7 +96,12 @@ const Airline = (props) => {
             </Main>
           </Column>
           <Column>
-            <ReviewForm />
+            <ReviewForm
+              handleChange={handleChange}
+              handleSubmit={handleSubmit}
+              attributes={airline.data.attributes}
+              review={review}
+            />
           </Column>
         </Fragment>
       )}
