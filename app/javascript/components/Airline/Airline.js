@@ -81,6 +81,13 @@ const Airline = (props) => {
       .catch((resp) => {});
   };
 
+  const setRating = (score, e) => {
+    e.preventDefault();
+    // debugger;
+
+    setReview({ ...review, score });
+  };
+
   return (
     <Wrapper>
       {/* added the loaded wrapper to header */}
@@ -99,6 +106,7 @@ const Airline = (props) => {
             <ReviewForm
               handleChange={handleChange}
               handleSubmit={handleSubmit}
+              setRating={setRating}
               attributes={airline.data.attributes}
               review={review}
             />
