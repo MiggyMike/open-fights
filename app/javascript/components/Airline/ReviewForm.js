@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import Gray from '../Star/Gray';
-import Selected from '../Star/Selected';
-import Hover from '../Star/Hover';
+import Gray from './Star/Gray';
+import Selected from './Star/Selected';
+import Hover from './Star/Hover';
 
 const RatingContainer = styled.div`
   text-align: center;
