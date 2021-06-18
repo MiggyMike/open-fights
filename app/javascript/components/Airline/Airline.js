@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './Header';
 import styled from 'styled-components';
 import ReviewForm from './ReviewForm';
+import Review from './Review';
 
 const Wrapper = styled.div`
   margin-left: auto;
@@ -64,7 +65,7 @@ const Airline = (props) => {
     // update default headers to pull in csrfTokens
     const csrfToken = document.querySelector('[name =csrf-token]').content;
     axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken;
-    console.log('csrf:', csrfToken);
+    // console.log('csrf:', csrfToken);
 
     // grab airline id from  airline object
     const airline_id = airline.data.id;
@@ -74,7 +75,8 @@ const Airline = (props) => {
       .post('/api/v1/reviews', { review, airline_id }) // payload submitted
       .then((resp) => {
         // debugger;
-        const included = [...airline.included, resp.data];
+        const included = [...airline.included, resp.data.data];
+        // console.log(included);
         setAirline({ ...airline, included });
         setReview({ title: '', description: '', score: 0 });
       })
@@ -88,6 +90,16 @@ const Airline = (props) => {
     setReview({ ...review, score });
   };
 
+  // let reviews  be undefined initally
+  let reviews;
+  // wrap to check if data is load and airline.included exist
+  if (loaded && airline.included) {
+    reviews = airline.included.map((item, index) => {
+      console.log('mapping:', item);
+      return <Review key={index} attributes={item.attributes} />;
+    });
+  }
+
   return (
     <Wrapper>
       {/* added the loaded wrapper to header */}
@@ -99,7 +111,7 @@ const Airline = (props) => {
                 attributes={airline.data.attributes}
                 reviews={airline.included}
               />
-              <div className='reviews'></div>
+              {reviews}
             </Main>
           </Column>
           <Column>
