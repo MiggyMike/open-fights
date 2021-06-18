@@ -84,7 +84,7 @@ const Airline = (props) => {
   const setRating = (score, e) => {
     e.preventDefault();
     // debugger;
-
+    // console.log(score);
     setReview({ ...review, score });
   };
 
