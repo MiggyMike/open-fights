@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import Gray from './Star/Gray';
-import Selected from './Star/Selected';
-import Hover from './Star/Hover';
+import Gray from '../Star/Gray';
+import Selected from '../Star/Selected';
+import Hover from '../Star/Hover';
 
 const RatingContainer = styled.div`
   text-align: center;
@@ -30,7 +30,7 @@ const RatingBox = styled.div`
     cursor: pointer;
     width: 40px;
     height: 40px;
-    background-image: url('data:image/svg+xml;charset=UTF-8,l${Gray}');
+    background-image: url('data:image/svg+xml;charset=UTF-8,${Gray}');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
@@ -46,12 +46,11 @@ const RatingBox = styled.div`
     background-image: url('data:image/svg+xml;charset=UTF-8,${Hover}');
   }
 `;
-
 const Field = styled.div`
 border-radius: 4px;
 
 input{
-  width: 97%;
+  width: 95%;
   min-height: 50px;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
@@ -65,15 +64,15 @@ textarea{
   border: 1px solid #e6e6e6;
   margin: 12px;
   padding: 12px;
-}`;
-
+}
+`;
 const Wrapper = styled.div`
   background: #000;
   padding: 20px;
   height: 100vh;
   padding-top: 100px;
 `;
-const Submit = styled.div`
+const Submit = styled.button`
   color: #fff;
   background: green;
   border-radius: 4px;
@@ -81,7 +80,7 @@ const Submit = styled.div`
   font-size: 18px;
   cursor: pointer;
   transition: ease-in-out 0.1s;
-  width: 97%;
+  width: 100%;
   margin-top: 20px;
   text-align: center;
 
@@ -97,7 +96,6 @@ const Headline = styled.div`
   font-weightL bold;
   color: #fff;
 `;
-
 const RatingTitle = styled.div`
   padding:20px;
   font-size:20px;
@@ -149,7 +147,7 @@ const ReviewForm = (props) => {
             <RatingBox>{ratingOptions}</RatingBox>
           </RatingContainer>
         </Field>
-        <Submit>Submit Your Review</Submit>
+        <Submit type='submit'>Submit Your Review</Submit>
       </form>
     </Wrapper>
   );
