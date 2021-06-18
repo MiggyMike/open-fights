@@ -51,7 +51,7 @@ const Field = styled.div`
 border-radius: 4px;
 
 input{
-  width: 96%;
+  width: 97%;
   min-height: 50px;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
@@ -75,15 +75,15 @@ const Wrapper = styled.div`
 `;
 const Submit = styled.div`
   color: #fff;
-  background: #333;
+  background: green;
   border-radius: 4px;
   padding: 12px;
   font-size: 18px;
   cursor: pointer;
   transition: ease-in-out 0.1s;
-  border: 1px solid #fff;
-  width: 96%;
+  width: 97%;
   margin-top: 20px;
+  text-align: center;
 
   &:hover {
     background: #fff;
