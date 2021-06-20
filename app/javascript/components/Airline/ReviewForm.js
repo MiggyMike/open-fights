@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
-import styled from 'styled-components';
-import Gray from './Star/Gray';
-import Selected from './Star/Selected';
-import Hover from './Star/Hover';
+import React, { Fragment } from "react";
+import styled from "styled-components";
+import Gray from "./Star/Gray";
+import Selected from "./Star/Selected";
+import Hover from "./Star/Hover";
 
 const RatingContainer = styled.div`
   text-align: center;
@@ -30,20 +30,20 @@ const RatingBox = styled.div`
     cursor: pointer;
     width: 40px;
     height: 40px;
-    background-image: url('data:image/svg+xml;charset=UTF-8,${Gray}');
+    background-image: url("data:image/svg+xml;charset=UTF-8,${Gray}");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 70%;
   }
 
   input:checked ~ label,
   input:checked ~ label ~ label {
-    background-image: url('data:image/svg+xml;charset=UTF-8,${Selected}');
+    background-image: url("data:image/svg+xml;charset=UTF-8,${Selected}");
   }
 
   input:not(:checked) ~ label:hover,
   input:not(:checked) ~ label:hover ~ label {
-    background-image: url('data:image/svg+xml;charset=UTF-8,${Hover}');
+    background-image: url("data:image/svg+xml;charset=UTF-8,${Hover}");
   }
 `;
 const Field = styled.div`
@@ -111,7 +111,7 @@ const ReviewForm = (props) => {
           value={score}
           name='rating'
           checked={props.review.score == score}
-          onChange={() => console.log('selected:', score)}
+          onChange={() => console.log("selected:", score)}
           id={`rating-${score}`}
         />
         <label onClick={props.setRating.bind(this, score)}></label>
