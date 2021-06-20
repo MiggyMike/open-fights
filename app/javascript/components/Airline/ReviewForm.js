@@ -74,9 +74,11 @@ const Wrapper = styled.div`
 `;
 const Submit = styled.button`
   color: #fff;
-  background: green;
-  border-radius: 4px;
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  border-radius: 25px;
   padding: 12px;
+  border-style: none;
   font-size: 18px;
   cursor: pointer;
   transition: ease-in-out 0.1s;
