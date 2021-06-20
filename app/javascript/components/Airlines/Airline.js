@@ -27,7 +27,8 @@ const LinkWrapper = styled.div`
 
   a {
     color: #fff;
-    background: #000;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
     border-radius: 4px;
     padding: 10px 50px;
     border: 1px solid #000;
