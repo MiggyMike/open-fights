@@ -8,15 +8,29 @@
 
 ---
 
+Welcome to my first Summer Sprint!
+
+Here I will be doing 2 things:
+
+[1] Refamiliarizing myself with Ruby on Rails(RoR)
+[a]Primarily using Rails Backend
+[2]Integrating JS frontend-framework, React
+
 ### Overview
 
-I've found a particular interest in Ruby on Rails as my first learned programming language, 2018/19. More recently, picking up JS and the React framework via General Assembly SEI cohort 10/2020-01/2021. Both, langauges I really have a great time working through and learning. Once I completed my cohort with GA, I knew at some point I wanted to see what and how I could use Rails backend and React on frontend.
+I learned RoR back in 2018/2019 in a self-paced web development program. While more recently, I completed a Software Engineering Immersive program. In this program, I went picked up the MERN/PERN stack. Learning JS and the frontend framework, React, has been quite challenging and fun. However, as I came upon completing my cohort, and working within the PERN stack things started to click as far as seeing some similarities between that and my RoR project. More so the Postgres.
 
-After some searching, I came across this YouTube tutorial [Let's Build a CRUD app with Rails and React](https://www.youtube.com/watch?v=iqh9enFWHuY). So I gave it a shot here!
+At that moment, I began to find different appreciation between the two languages. I knew I had to try them out together - Here we are.
+
+I'll be using Rails for the backend and React on the frontend.
+
+After some searching, I came across this YouTube tutorial [Let's Build a CRUD app with Rails and React](https://www.youtube.com/watch?v=iqh9enFWHuY).
+
+So I gave it a shot here!
 
 ### Purpose
 
-My main goal here was to get reacquainted with Ruby on Rails, as well as intergrating React for a 3week spring. Throughout this process, I documented the steps I took to revisit and attempt to build some thing later on down the line from my documented notes alone. I plan to do a few more sprints over the courese of the summer, to become a bit more accquainted with marrying the two languages.
+My main goal here was to get reacquainted with Ruby on Rails, as well as intergrating React for a 3-week sprint. Throughout this process, I documented the steps in a bullet journal to later revisit and build some thing from my documented notes alone. I plan to do a few more sprints over the courese of the summer (2021), to become a bit more accquainted with marrying the two languages.
 
 ---
 
@@ -34,7 +48,7 @@ My main goal here was to get reacquainted with Ruby on Rails, as well as intergr
 
 ### Deployed
 
-Project was deployed on heroku/netlify and can be found [here](link).
+The project was deployed on Heroku and Netlify and can be found [here](link).
 
 ---
 
