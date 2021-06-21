@@ -4,7 +4,7 @@
 
 ### Michael Jennings
 
-[Portfolio](https://miggymike.github.io/) | [LinkedIn](https://www.linkedin.com/in/mjennings6/) | [Flight Tease](http://you-tried-it.surge.sh/index.html)
+[Portfolio](https://miggymike.github.io/) | [LinkedIn](https://www.linkedin.com/in/mjennings6/) | [Project 2: Coming Soon]()
 
 ---
 
