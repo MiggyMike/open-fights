@@ -8,7 +8,7 @@
 
 ---
 
-Welcome to my first Summer Sprint!
+## Welcome to my first Summer Sprint!
 
 Here I will be doing 2 things:
 
@@ -46,14 +46,16 @@ My main goal here was to get reacquainted with Ruby on Rails, as well as integra
 
 ### Deployed
 
-The project was deployed on Heroku and Netlify and can be found [here](link).
+The project was deployed on Heroku and Netlify and can be found [here]().
+
+** deployment inprogress **
 
 ---
 
 ### Resources
 
-Video: [Let's Build a CRUD app with Rails and React](https://www.youtube.com/watch?v=iqh9enFWHuY)
-Repo: [Zayne Open Flights](https://github.com/zayneio/open-flights)
+- Video: [Let's Build a CRUD app with Rails and React](https://www.youtube.com/watch?v=iqh9enFWHuY)
+- Repo: [Zayne Open Flights](https://github.com/zayneio/open-flights)
 
 ---
 
