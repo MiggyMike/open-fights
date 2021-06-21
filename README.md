@@ -12,9 +12,9 @@ Welcome to my first Summer Sprint!
 
 Here I will be doing 2 things:
 
-[1] Refamiliarizing myself with Ruby on Rails(RoR)
-[a]Primarily using Rails Backend
-[2]Integrating JS frontend-framework, React
+1. Refamiliarizing myself with Ruby on Rails(RoR)
+   1. Primarily using Rails Backend
+2. Integrating JS frontend-framework, React
 
 ### Overview
 
@@ -24,13 +24,11 @@ At that moment, I began to find different appreciation between the two languages
 
 I'll be using Rails for the backend and React on the frontend.
 
-After some searching, I came across this YouTube tutorial [Let's Build a CRUD app with Rails and React](https://www.youtube.com/watch?v=iqh9enFWHuY).
+This is the tutorial that I followed along with [Let's Build a CRUD app with Rails and React](https://www.youtube.com/watch?v=iqh9enFWHuY)
 
-So I gave it a shot here!
+### Goal
 
-### Purpose
-
-My main goal here was to get reacquainted with Ruby on Rails, as well as intergrating React for a 3-week sprint. Throughout this process, I documented the steps in a bullet journal to later revisit and build some thing from my documented notes alone. I plan to do a few more sprints over the courese of the summer (2021), to become a bit more accquainted with marrying the two languages.
+My main goal here was to get reacquainted with Ruby on Rails, as well as integrating React for a 3-week sprint. Throughout this process, I documented the steps in a bullet journal to later revisit and build something from my documented notes alone. I plan to do a few more sprints throughout the summer (2021), to become a bit more acquainted with marrying the two languages.
 
 ---
 
@@ -40,7 +38,7 @@ My main goal here was to get reacquainted with Ruby on Rails, as well as intergr
 - React (webpacker)
 - Styled Components
 - HMTL/CSS/JavaScript
-- API Serializer
+- JsonAPI Serializer
 - A bit of yarn
 - FontAwesome Icons
 
