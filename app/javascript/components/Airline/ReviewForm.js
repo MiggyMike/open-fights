@@ -87,9 +87,10 @@ const Submit = styled.button`
   text-align: center;
 
   &:hover {
-    background: #fff;
-    color: #000;
-    border: 1px solid #fff;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #0bab64 0%, #3bb78f 74%);
+    color: #fff;
+    border: 1px solid #0bab64;
   }
 `;
 const Headline = styled.div`
