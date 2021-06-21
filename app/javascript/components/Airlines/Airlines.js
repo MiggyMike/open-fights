@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Airline from './Airline';
-import styled from 'styled-components';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Airline from "./Airline";
+import styled from "styled-components";
 
 const Home = styled.div`
+  margin: 0 auto;
   text-align: center;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 `;
 const Header = styled.div`
   padding: 100px 100px 10px 100px;
@@ -23,8 +22,9 @@ const Subheader = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  align-content: center;
   width: 100%;
   padding: 20px;
 `;
@@ -36,7 +36,7 @@ const Airlines = () => {
     // Get all of the airlines from api
     // Update airlines in out state
     axios
-      .get('/api/v1/airlines.json')
+      .get("/api/v1/airlines.json")
       .then((resp) => {
         setAirlines(resp.data.data);
       })
