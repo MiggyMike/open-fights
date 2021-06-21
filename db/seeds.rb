@@ -25,11 +25,15 @@ airlines = Airline.create ([
   }, 
   { 
     name: "JetBlue",
-    image_url: "https://open-flights.s3.amazonaws.com/JetBlue.png" 
+    image_url: "https://i.pinimg.com/originals/91/39/57/913957f2db792b01b330494b5374f23c.jpg" 
   }, 
   { 
     name: "American Airlines",
     image_url: "https://open-flights.s3.amazonaws.com/American-Airlines.png" 
+  },
+  { 
+    name: "Spirit",
+    image_url: "https://yt3.ggpht.com/ytc/AAUvwnjbxqfdhWX-HecdrCKgtkl8okgUitbEhjS_nhBlVA=s900-c-k-c0x00ffffff-no-rj" 
   }
 ])
 
