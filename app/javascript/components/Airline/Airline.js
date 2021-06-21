@@ -1,9 +1,9 @@
-import React, { useState, useEffect, Fragment } from 'react';
-import axios from 'axios';
-import Header from './Header';
-import styled from 'styled-components';
-import ReviewForm from './ReviewForm';
-import Review from './Review';
+import React, { useState, useEffect, Fragment } from "react";
+import axios from "axios";
+import Header from "./Header";
+import styled from "styled-components";
+import ReviewForm from "./ReviewForm";
+import Review from "./Review";
 
 const Wrapper = styled.div`
   margin-left: auto;
@@ -54,7 +54,7 @@ const Airline = (props) => {
     e.preventDefault();
     // console.log('name:', e.target.name, 'value:', e.target.value);
     setReview(Object.assign({}, review, { [e.target.name]: e.target.value }));
-    console.log('review:', review);
+    console.log("review:", review);
   };
 
   // handles changes in what we do when form is submited fields
@@ -63,8 +63,8 @@ const Airline = (props) => {
     e.preventDefault();
 
     // update default headers to pull in csrfTokens
-    const csrfToken = document.querySelector('[name =csrf-token]').content;
-    axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken;
+    const csrfToken = document.querySelector("[name =csrf-token]").content;
+    axios.defaults.headers.common["X-CSRF-TOKEN"] = csrfToken;
     // console.log('csrf:', csrfToken);
 
     // grab airline id from  airline object
@@ -72,13 +72,13 @@ const Airline = (props) => {
     // combine  review with the airline id
     // making post request to api
     axios
-      .post('/api/v1/reviews', { review, airline_id }) // payload submitted
+      .post("/api/v1/reviews", { review, airline_id }) // payload submitted
       .then((resp) => {
         // debugger;
         const included = [...airline.included, resp.data.data];
         // console.log(included);
         setAirline({ ...airline, included });
-        setReview({ title: '', description: '', score: 0 });
+        setReview({ title: "", description: "", score: 0 });
       })
       .catch((resp) => {});
   };
@@ -95,7 +95,7 @@ const Airline = (props) => {
   // wrap to check if data is load and airline.included exist
   if (loaded && airline.included) {
     reviews = airline.included.map((item, index) => {
-      console.log('mapping:', item);
+      console.log("mapping:", item);
       return <Review key={index} attributes={item.attributes} />;
     });
   }
