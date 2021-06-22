@@ -4,11 +4,11 @@
 
 ### Michael Jennings
 
-[Portfolio](https://miggymike.github.io/) | [LinkedIn](https://www.linkedin.com/in/mjennings6/) | [Project 2: Coming Soon]()
+[Portfolio](https://miggymike.github.io/) | [LinkedIn](https://www.linkedin.com/in/mjennings6/) | [Project 2: Coming Soon](_)
 
 ---
 
-## Welcome to my first Summer Sprint!
+## Welcome to my first Summer Sprint
 
 Here I will be doing 2 things:
 
@@ -44,11 +44,11 @@ My main goal here was to get reacquainted with Ruby on Rails, as well as integra
 
 ---
 
-### Deployed
+### Deployment
 
-The project was deployed on Heroku and Netlify and can be found [here]().
+(deployment in progress)
 
-**deployment in progress**
+The project was deployed on Heroku and Netlify and can be found [here](_).
 
 ---
 
