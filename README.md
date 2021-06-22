@@ -48,7 +48,7 @@ My main goal here was to get reacquainted with Ruby on Rails, as well as integra
 
 The project was deployed on Heroku and Netlify and can be found [here]().
 
-** deployment inprogress **
+**deployment in progress**
 
 ---
 
